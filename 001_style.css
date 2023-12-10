@@ -1,0 +1,40 @@
+body {
+    background-color:rgb(236, 216, 191);
+}
+
+p {
+    font-size: 15px;
+}
+
+
+
+#page-title {
+    font-size: 80px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+color: rgb(153, 199, 199);
+}
+
+#content-title {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(213, 172, 207);
+}
+
+
+table {
+    background-color:rgb(218, 185, 218);
+}
+
+.table-content {
+    border: 1px solid ;
+    margin: 0px;
+}
+
+
+.separator {
+    background-color: brown;
+    height: 4px;
+    width: 90%;
+}
