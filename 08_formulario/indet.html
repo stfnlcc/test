@@ -6,31 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            display: flex;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif
+            font-size: 30px;
+        }
+
+
         .input-myform {
-            border: 1px solid red;
+            border: 1px solid gray;
             border-radius: 5px;
             display: flex;
-            width: 100px;
+            width: 220px;
             height: 25px;
+            justify-content: space-around;
         }
 
         label {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 20px;
-            bottom: ;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        p {
+            display: flex;
+            justify-content: space-around;
+            margin-block-end: 1px;
+
         }
 
         div {
             margin-bottom: 10px flex-direction: column;
             ;
         }
+
+        .container {
+            display: flex;
+            background-color: gray;
+            border: 5px solid darkolivegreen;
+            width: 500px;
+            height: 800px;
+        }
+
+        #mayor {
+            display: flex;
+            justify-content: center;
+            height: 10px;
+            width: 150px;
+        }
+
+
+        input[type="radio" i] {
+            background-color: initial;
+            cursor: default;
+            box-sizing: border-box;
+            margin: 5px 0px 0px -265px;
+            padding: initial;
+            border: initial;
+        }
+
+        button {
+            border-radius: 5px;
+            display: flex;
+            width: 220px;
+            height: 25px;
+            justify-content: center;
+        }
     </style>
 
 </head>
 
 <body>
-
-    <form action="GET" target="#">
+    <form action="/">
+    <div class="containter">
+    
         <div>
             <label for="nombre" class="input-name">Introduzca su nombre</label>
             <input type="text" id="nombre" class="input-myform" name="nombre">
@@ -57,19 +106,19 @@
         </div>
 
         <div>
-            <h3>eres mayor de edad?</h3>
-            <label for="nombre">Si</label>
-            <input id="mayor" type="radio" name="mayor" value="si"></br>
-            <label for="nombre">No</label>
-            <input id="mayor" type="radio" name="mayor" value="no"></br>
+            <p>Eres mayor de edad?</p>
+            <label for="nombre">Si<input id="mayor" type="radio" name="mayor" value="si"></label>
+            <label for="nombre">No<input id="mayor" type="radio" name="mayor" value="no"></label>
         </div>
 
 
 
         <button type="submit" onclick="checkForm()" value="enviar" class="btn btn-primary">Enviar</button>
 
-    </form>
 
+
+    </div>
+</form>
 
     <script>
         function checkForm() {
