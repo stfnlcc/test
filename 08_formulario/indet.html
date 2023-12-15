@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .input-myform {
+            border: 1px solid red;
+            border-radius: 5px;
+            display: flex;
+            width: 100px;
+            height: 25px;
+        }
+
+        label {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            bottom: ;
+        }
+
+        div {
+            margin-bottom: 10px flex-direction: column;
+            ;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form action="GET" target="#">
+        <div>
+            <label for="nombre" class="input-name">Introduzca su nombre</label>
+            <input type="text" id="nombre" class="input-myform" name="nombre">
+        </div>
+
+        <div>
+            <label for="apellido1" class="input-name">Introduzca su apellido</label>
+            <input type="text" id="apellido1" class="input-myform" name="apellido1">
+        </div>
+
+        <div>
+            <label for="apellido2" class="input-name">Introduzca su segundo apellido</label>
+            <input type="text" id="apellido2" class="input-myform" name="apellido2">
+        </div>
+
+        <div>
+            <label for="email" class="input-name">Introduzca email</label>
+            <input type="email" id="email" class="input-myform" name="email">
+        </div>
+
+        <div>
+            <label for="nombre" class="input-name">Introduzca movil</label>
+            <input type="tel" id="telefono" class="input-myform" name="telefono">
+        </div>
+
+        <div>
+            <h3>eres mayor de edad?</h3>
+            <label for="nombre">Si</label>
+            <input id="mayor" type="radio" name="mayor" value="si"></br>
+            <label for="nombre">No</label>
+            <input id="mayor" type="radio" name="mayor" value="no"></br>
+        </div>
+
+
+
+        <button type="submit" onclick="checkForm()" value="enviar" class="btn btn-primary">Enviar</button>
+
+    </form>
+
+
+    <script>
+        function checkForm() {
+            const nombre = document.querySelector('#nombre');
+            const apellido1 = document.querySelector('#apellido1');
+            const apellido2 = document.querySelector('#apellido2');
+            const email = document.querySelector('#email');
+            const telefono = document.querySelector('#telefono');
+            const mayor = document.querySelector('#mayor');
+
+            if (nombre.value !== "" && apellido1.value !== "" && apellido2.value !== "" && email.value !== "" && telefono.value !== "" && mayor.value) {
+                alert('es correcto');
+            } else {
+                alert('error');
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
