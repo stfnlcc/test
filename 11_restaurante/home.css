@@ -1,0 +1,209 @@
+/* GENERAL */
+.container {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    font-size: 50px;
+    text-align: center;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+
+/* MOVIL */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 400px;
+    }
+
+    #menu {
+        width: 290px;
+        height: 220px;
+    }
+}
+
+/* pc */
+
+@media screen and (min-width:577px) {
+    .container {
+        position: fixed;
+        width: 90%;
+        height: fit-content;
+        font-size: 50px;
+        text-align: center;
+        flex-direction: column;
+        align-items: stretch;
+
+    }
+}
+
+
+
+
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #9a2e2f;
+    background-image: url(img/sfondo.jpg);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 10px;
+    margin-top: 0px;
+}
+
+.container {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    font-size: 50px;
+    text-align: center;
+    flex-direction: column;
+    align-items: stretch;
+    left: 0px;
+}
+
+p {
+    display: flex;
+    color: #dddddd;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+a:-webkit-any-link {
+    color: #9a2e2f;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+    color: #dddddd;
+
+}
+
+#logo {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+    margin-top: -350px;
+    margin-bottom: 100px;
+}
+
+#logo1 {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    margin-top: 2px;
+    opacity: 100%;
+    height: 100px;
+    width: auto;
+    display: flex;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.collegamenti {
+    display: flex;
+    width: 1500px;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    word-spacing: 20px;
+    font-size: 30px;
+}
+
+
+
+
+.banner_uno {
+    width: auto;
+    display: flex;
+    align-items: center;
+    background-image: url(img/rest.jpg);
+    height: 810px;
+    justify-content: center;
+    background-size: cover;
+    margin-bottom: 40px auto;
+    margin-top: 120px;
+}
+
+img {
+    margin-top: -60px;
+    opacity: 100%;
+    height: 250px;
+    width: auto;
+    display: flex;
+}
+
+
+
+.container2 {
+    width: 80%;
+    background-image: url(img/sfondonero.jpg);
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 70px
+}
+
+
+.container3 {
+    width: 80%;
+    background-image: url(img/sfondonero.jpg);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+#menu {
+    width: 1000px;
+    height: 700px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+
+}
+
+
+.container4 {
+    width: 80%;
+    background-image: url(img/sfondonero.jpg);
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+#contatti {
+    width: 1000px;
+    height: 700px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+
+}
+
+header {
+    background-image: url(img/sfondo.jpg);
+    ;
+}
